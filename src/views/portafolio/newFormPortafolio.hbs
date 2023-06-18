@@ -1,0 +1,65 @@
+<!-- Portfolio Section-->
+        <section class="page-section mt-5" id="login">
+            <div class="container">
+                <!-- Contact Section Heading-->
+                <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">New Portfolio</h2>
+                <!-- Icon Divider-->
+                <div class="divider-custom">
+                    <div class="divider-custom-line"></div>
+                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                    <div class="divider-custom-line"></div>
+                </div>
+
+                <!-- Portfolio Section Form-->
+                <div class="row justify-content-center">
+                    <div class="col-lg-8 col-xl-7">
+
+                        <form action="/portafolio/add" method="post">
+                            
+                            <!-- Title input-->
+                            <div class="form-floating mb-3">
+                                <input class="form-control" id="title" type="text" placeholder="Enter your title..." required name="title"/>
+                                <label for="title">Title</label>
+                            </div>
+
+                            <!-- Category input-->
+                            <div class="form-floating mb-3">
+                                <input class="form-control" id="category" type="text" placeholder="Enter your title..." required name="category"/>
+                                <label for="category">Category</label>
+                            </div>
+
+                            <!-- Description input-->
+                            <div class="form-floating mb-3">
+                                <textarea class="form-control" id="description" type="text" placeholder="Enter your message here..." style="height: 10rem" required name="description"></textarea>
+                                <label for="description">Description</label>
+                            </div>
+
+                            <!--URL GitHub -->
+                            <div class="form-floating mb-3">
+                                <input type="url" class="form-control" id="url" placeholder="Enter the URL" required name="url">
+                                <label for="url">URL</label>
+                            </div>
+
+                            <!-- Skills -->
+                            <div class="form-floating mb-3">
+                                <input class="form-control" id="skill" type="text" placeholder="Enter the skills used..." required name="skill"/>
+                                <label for="skill">Skills Used</label>
+                            </div>
+
+
+                            <!-- Contact Number -->
+                            <div class="form-floating mb-3">
+                                <input class="form-control" id="contact" type="text" placeholder="Enter your contact number..." required name="contact" pattern="[0-9]+" oninput="this.setCustomValidity('')" oninvalid="this.setCustomValidity('Please enter a valid contact number (only numbers).')" />
+                                <label for="contact">Contact Number</label>
+                            </div>
+
+
+                            <!-- Submit Button-->
+                            <button class="btn btn-primary btn-xl" type="submit">Send</button>
+
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+        </section>
